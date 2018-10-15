@@ -6,7 +6,7 @@ render_header("Home Page");
 render_nav();
 ?>
 
-    <div class="content">
+    <div class="page-content">
         
 
     </div>
