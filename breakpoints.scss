@@ -1,34 +1,29 @@
 @media (min-width: 1400px) {
-    .img-card {
-        margin: 1%;
-        max-width: 14.66%;
+    .sizable-card {
+        width: 16.66%;
     }
 }
 
 @media (max-width: 1400px) {
-    .img-card {
-        margin: 1%;
-        max-width: 23%;
+    .sizable-card {
+        width: 25%;
     }
 }
 
 @media (max-width: 1000px) {
-    .img-card {
-        margin: 1%;
-        max-width: 31.33%;
+    .sizable-card {
+        width: 33.33%;
     }
 }
 
 @media (max-width: 780px) {
-    .img-card {
-        margin: 1%;
-        max-width: 48%;
+    .sizable-card {
+       width: 50%;
     }
 }
 
 @media (max-width: 500px) {
-    .img-card {
-        margin: 1%;
-        max-width: 98%;
+    .sizable-card {
+        width: 100%;
     }
 }

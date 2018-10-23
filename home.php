@@ -28,12 +28,15 @@ render_nav();
 function render_event_card($index) {
     echo <<<eventCard
     \n
+    <div class="sizable-card">
     <div class="card bg-dark img-card" tabindex="$index" onclick="onCardClick(event)" onKeyPress="onCardClick(event)" role="button">
         <div class="hide-overspill"><img class="card-img" src="images/winners.jpg" alt="Card image"></div>
         <div class="card-img-overlay">
             <h5 class="card-title">Card title</h5>
         </div>
-    </div>\n
+    </div>    
+    </div>
+    \n
 eventCard;
 }
 ?>

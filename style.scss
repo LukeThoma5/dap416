@@ -68,39 +68,45 @@ footer {
 
 }
 
+.sizable-card {
+    box-sizing: border-box;
+    padding: 1em 1em 0em 1em;
 
+    .img-card {
 
-.img-card {
+        display: inline-block;
+        cursor: pointer;
 
-    display: inline-block;
-    cursor: pointer;
-
-    div.card-img-overlay {
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    h5.card-title {
-        width: 100%;
-        font-size: 2.25rem;
-        color: #fff;
-    }
-
-    // Treat mouse over and tab focus the same
-    &:hover, &:focus {
-        color: red !important;
-
-        img.card-img {
-            filter: grayscale(100%);
+    
+        div.card-img-overlay {
+            display: flex;
+            align-items: center;
+            text-align: center;
         }
+    
+        h5.card-title {
+            width: 100%;
+            font-size: 2.25rem;
+            color: #fff;
+        }
+    
+        // Treat mouse over and tab focus the same
+        &:hover, &:focus {
+            color: red !important;
+    
+            img.card-img {
+                filter: grayscale(100%);
+            }
+        }
+    
+        img.card-img {
+            filter: blur(8px);
+        }
+    
     }
-
-    img.card-img {
-        filter: blur(8px);
-    }
-
 }
+
+
 
 .hide-overspill {
     overflow: hidden;
