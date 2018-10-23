@@ -27,10 +27,7 @@ render_header("Home Page");
 <?php
 render_nav();
 
-$races = array(
-    array("title" => "2018 UCL Road World Championships", "image" => "images/winners.jpg"),
-    array("title" => "Stage 20 Post Race Coverage", "image" => "images/320-7R9A6117.jpg")
-);
+include("mockData/home-mock.php");
 
 $render_event_card = function($index) use ($races) {
     
@@ -62,9 +59,6 @@ eventCard;
                     }
                 ?>
             </section>
-
-
-
 
         </section>
 

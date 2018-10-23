@@ -1,5 +1,3 @@
-@import 'breakpoints.scss';
-
 // Result is minified so can comment as much as needed
 
 body {
@@ -78,32 +76,33 @@ footer {
         display: inline-block;
         cursor: pointer;
 
-    
+
         div.card-img-overlay {
             display: flex;
             align-items: center;
             text-align: center;
         }
-    
+
         h5.card-title {
             width: 100%;
-            font-size: 2.25rem;
+            font-size: 1.5em;
             color: #fff;
         }
-    
+
         // Treat mouse over and tab focus the same
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             color: red !important;
-    
+
             img.card-img {
                 filter: grayscale(100%);
             }
         }
-    
+
         img.card-img {
             filter: blur(8px);
         }
-    
+
     }
 }
 
@@ -141,15 +140,21 @@ dl {
     padding: 1em;
 
     &.inline {
-        // dt {
-        //     float: left;
-        //     clear: left;
-    
-        //     &::after {
-        //         content: ":";
-        //         margin-right: 1em;
-        //       }
-        // }
+        dt {
+            &:before {
+                content: "";
+                display: block;
+            }
+
+            &:after {
+                content: ":"
+            }
+        }
+
+        dt,
+        dd {
+            display: inline;
+        }
     }
 }
 
@@ -157,26 +162,9 @@ dl {
     display: flex;
     flex-flow: wrap;
 
-
+    .table-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1em;
+    }
 }
-
-dl.inline {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    overflow: visible;
-  }
-  dl.inline dt {
-    flex: 0 0 50%;
-
-    &::after {
-                content: ":";
-              }
-  }
-  dl.inline dd {
-    flex:0 0 50%;
-
-    // flex-grow: 1;
-
-// min-width: 75%;
-  }
