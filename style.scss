@@ -69,6 +69,7 @@ footer {
 }
 
 .sizable-card {
+    // Make the width calculation include padding!
     box-sizing: border-box;
     padding: 1em 1em 0em 1em;
 
