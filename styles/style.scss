@@ -168,3 +168,25 @@ dl {
         padding: 1em;
     }
 }
+
+.accordion {
+
+    td.table-thumb {
+        width: 10.5rem;
+
+        img {
+            width: 9rem;
+        }
+    }
+
+    button {
+        span, i {
+            vertical-align: middle;
+        }
+
+        span {
+            font-size: 2em;
+            margin-left: 0.5em;
+        }
+    }
+}

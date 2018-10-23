@@ -85,6 +85,35 @@ card;
     </div>
 
   </section>
+
+  <div class="accordion" id="highlight-accordion">
+  <div class="card">
+    <div class="card-header" id="highlight-heading">
+      <h5 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <i class="fas fa-film fa-3x"></i><span>Highlights</span> 
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="highlight-heading" data-parent="#highlight-accordion">
+      <div class="card-body">
+      <table class="table table-bordered table-hover">
+      <caption>List of Highlights</caption>
+      <tbody>
+        <tr>
+          <td class="table-thumb"><img src="images/thumbnail.jpg"></td>
+          <td><a href="https://www.youtube.com/watch?v=N-ZO2ILecoE">Last KM of Stage 21 (04:14)</a></td>
+      </tr>
+      <tr>
+          <td class="table-thumb"><img src="images/thumbnail.jpg"></td>
+          <td><a href="https://www.youtube.com/watch?v=N-ZO2ILecoE">Backstage Pass - Stage 21</a></td>
+      </tr>
+    </table>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 <?php require("footer.php") ?>
