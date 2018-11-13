@@ -37,7 +37,7 @@ $render_event_card = function($index) use ($races) {
     \n
     <div class="sizable-card">
     <div class="card bg-dark img-card" tabindex="0" onclick="onCardClick(event)" onKeyPress="onCardClick(event)" role="button">
-        <div class="hide-overspill"><img class="card-img" src="$data[image]" alt="Card image"></div>
+        <div class="hide-overspill"><img class="card-img" src="$data[image]" alt="$data[desc]"></div>
         <div class="card-img-overlay">
             <h5 class="card-title">$data[title]</h5>
         </div>

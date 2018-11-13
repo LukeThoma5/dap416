@@ -21,7 +21,7 @@ navItem;
 function render_nav() {
     echo <<<navTop
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/home.php"><img src="http://www.steephill.tv/img/steephill_tv_logo21-200.gif" /></a>
+        <a class="navbar-brand" href="home.php"><img src="images/steephill.svg" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,9 +31,9 @@ function render_nav() {
             <ul class="navbar-nav mr-auto">
 navTop;
 
-            render_nav_item('/home.php', 'Home');
-            render_nav_item('/calendar.php', 'Calendar'); 
-            render_nav_item('/teams.php', 'Teams');
+            render_nav_item('home.php', 'Home');
+            render_nav_item('calendar.php', 'Calendar'); 
+            render_nav_item('teams.php', 'Teams');
         echo <<<navBottom
                 </ul>
         </div>
