@@ -249,3 +249,107 @@ dl {
         max-height: 22em;
     }
 }
+
+$border-color: #333;
+$light: #f8f9fa;
+
+.calendar {
+    margin: 1em;
+
+    border: 1px solid $border-color;
+
+    header {
+        display: flex;
+        h5 {
+            width: calc(100%/7);
+            text-align: center;
+            margin: 0;
+
+            border: 1px solid $border-color;
+            padding: 0.5em;
+        }
+
+        background: #dabdff;
+    }
+
+    .day {
+        width: calc(100%/7);
+        background-color: $light;
+        min-height: 10em;
+
+        border: 1px solid $border-color;
+
+        small {
+            display: none;
+        }
+
+        .event {
+            background: green;
+            display: inline-block;
+
+            border-radius: 0.25em;
+            padding: 0.25em;
+
+            color: $light;
+            text-decoration: none;
+
+            &:after {
+                display: block;
+            }
+
+        }
+
+        &.invalid {
+            background-color: #d1cecc;
+        }
+
+        hr {
+            margin-top: 0;
+            margin-bottom: 0.25em;
+        }
+
+    }
+
+    .day-container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+
+// Calendar 
+@media (max-width:900px) {
+
+    .calendar {
+        padding: 1em;
+
+        border: none;
+    
+        header {
+           display: none;
+        }
+    
+        .day {
+            width: 100%;
+            min-height: 5em;
+
+            margin-bottom: 0.25em;
+
+            h5 span:after {
+                content: ' | '
+            }
+
+            small {
+                display: initial;
+            }
+           
+            &.invalid {
+                display: none;
+            }
+    
+        }    
+        
+    }  
+    
+}

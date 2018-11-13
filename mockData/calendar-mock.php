@@ -23,20 +23,20 @@ class Day {
 
     function getClass() {
         if ($this->invalid) {
-            return " d-none d-sm-inline-block bg-light text-muted";
+            return " invalid";
         }
         return "";
     }
 
     function getEvents() {
         if (!isset($this->events) || count($this->events) == 0) {
-            echo '<p class="d-sm-none">No events</p>';
+            echo '<p>No events</p>';
             return;
         }
 
         foreach($this->events as $eventName) {
             echo <<<Event
-            <a href="./details.php" class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="$eventName<">$eventName</a>
+            <a href="./details.php" class="event" title="$eventName">$eventName</a>
 Event;
         }
     }
