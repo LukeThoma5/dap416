@@ -1,0 +1,23 @@
+.team-card {
+    width: 22em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1em 1em 0em 1em;
+
+    .list-group-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    h5 {
+        font-weight: 800;
+    }
+    
+    .card-img-top {
+        max-height: 22em;
+    }
+}

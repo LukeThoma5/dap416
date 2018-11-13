@@ -1,6 +1,6 @@
 <?php
 
-function render_header($title) {
+function render_header($title, $style) {
 
 $header = <<<headerText
 <!DOCTYPE html>
@@ -16,7 +16,8 @@ $header = <<<headerText
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css"/>
+    <link rel="stylesheet" href="styles/$style.css">
 
     <title>$title</title>
 </head>

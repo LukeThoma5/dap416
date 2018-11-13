@@ -1,0 +1,85 @@
+.sizable-card {
+    // Make the width calculation include padding!
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1em 1em 0em 1em;
+
+    .hide-overspill {
+        overflow: hidden;
+    }
+
+    .img-card {
+
+        display: inline-block;
+        cursor: pointer;
+
+
+        div.card-img-overlay {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            text-align: center;
+        }
+
+        h5.card-title {
+            width: 100%;
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        // Treat mouse over and tab focus the same
+        &:hover,
+        &:focus {
+            color: red !important;
+
+            img.card-img {
+                -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+            }
+
+            h5 {
+                background-color: black;
+            }
+        }
+
+        img.card-img {
+            -webkit-filter: blur(8px);
+                    filter: blur(8px);
+        }
+
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .sizable-card {
+        width: 16.66%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .sizable-card {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sizable-card {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 780px) {
+    .sizable-card {
+       width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .sizable-card {
+        width: 100%;
+    }
+}

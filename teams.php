@@ -2,7 +2,7 @@
 require("header.php");
 require("navbar.php");
 
-render_header("Teams");
+render_header("Teams Page", "teams");
 render_nav();
 
 include("mockData/teams-mock.php");

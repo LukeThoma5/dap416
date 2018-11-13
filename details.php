@@ -2,7 +2,7 @@
 require("header.php");
 require("navbar.php");
 
-render_header("Details Page");
+render_header("Details Page", "details");
 render_nav();
 ?>
 

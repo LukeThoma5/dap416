@@ -2,7 +2,7 @@
 require("header.php");
 require("navbar.php");
 
-render_header("Home Page");
+render_header("Home Page", "home");
 ?>
 
 <script>
