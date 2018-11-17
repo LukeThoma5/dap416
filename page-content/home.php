@@ -21,17 +21,12 @@ eventCard;
 }
 ?>
 <div class="page-content">
-    <section>
-
-        <section class="card-container">
-            
-            <?php
-                for($i = 0; $i < 10; $i++) {
-                    $render_event_card($i);
-                }
-            ?>
-        </section>
-
+    <section class="card-container">
+        
+        <?php
+            for($i = 0; $i < 10; $i++) {
+                $render_event_card($i);
+            }
+        ?>
     </section>
-
 </div>

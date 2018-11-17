@@ -31,18 +31,12 @@ echo    "</ul>
 }
 ?>
 
-    <div class="page-content">
+<div class="page-content">
     <section class="card-container center">
-
         <?php
             for($i = 0; $i < 10; $i++) {
                 $render_team($i);
             }
         ?>
-    </div>
-
     </section>
-    
-
-
-    </div>
+</div>
