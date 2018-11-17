@@ -2,66 +2,18 @@
 require_once("header.php");
 require_once("navbar.php");
 
-render_header("Home Page", "home");
+render_header_top();
 ?>
-
-<script>
-
-    function navToDetails() {
-        window.location.href = "details.php";
-    }
-    function onCardClick(ev) {
-        if(ev.keyCode==13){
-            navToDetails()
-        }
-        else if(ev.charCode==32){
-            ev.preventDefault();navToDetails();
-        } else if (ev.type == "click") {navToDetails();
-        }
-    }
-
-    
-
-</script>
+<link defer rel="stylesheet" href="styles/home.css" />
 
 <?php
+include("page-content/home-script.php");
+render_header_bottom("Home Page");
 render_nav();
 
-include("mockData/home-mock.php");
 
-$render_event_card = function($index) use ($races) {
-    
-    $data = $races[$index % count($races)];
-    
-    echo <<<eventCard
-    \n
-    <div class="sizable-card">
-    <div class="card bg-dark img-card" tabindex="0" onclick="onCardClick(event)" onKeyPress="onCardClick(event)" role="button">
-        <div class="hide-overspill"><img class="card-img" src="images/$data[image]-500.jpg" alt="$data[desc]"></div>
-        <div class="card-img-overlay">
-            <h5 class="card-title">$data[title]</h5>
-        </div>
-    </div>    
-    </div>
-    \n
-eventCard;
-}
+include("page-content/home.php");
+
+require_once("footer.php")
+
 ?>
-
-    <div class="page-content">
-        <section>
-
-            <section class="card-container">
-                
-                <?php
-                    for($i = 0; $i < 10; $i++) {
-                        $render_event_card($i);
-                    }
-                ?>
-            </section>
-
-        </section>
-
-    </div>
-
-<?php require("footer.php") ?>

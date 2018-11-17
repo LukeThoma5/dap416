@@ -7,18 +7,21 @@ $teams = array(
         "members" => array(
             array(
                 "id" => "1",
-                "name" => "VAN AVERMAET  Greg",
-                "country" => "BEL"
+                "name" => "Van Avermaet Greg",
+                "country" => "BEL",
+                "countryLong" => "Belgium"
             ),
             array(
                 "id" => "2",
-                "name" => "BETTIOL  Alberto",
-                "country" => "ITA"
+                "name" => "Bettiol Alberto",
+                "country" => "ITA",
+                "countryLong" => "Italy"
             ),
             array(
                 "id" => "3",
-                "name" => "DRUCKER  Jean-Pierre",
-                "country" => "LUX"
+                "name" => "Drucker Jean-Pierre",
+                "country" => "LUX",
+                "countryLong" => "Luxumberg"
             )
         ))
     );
