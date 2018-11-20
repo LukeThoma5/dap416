@@ -1,13 +1,14 @@
 <?php
-function render_header_top()  {
+function render_header_top($desc)  {
     $header = <<<headerText
     <!DOCTYPE html>
     <html lang="en">
     
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script defer src="min.js" ></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="Description" content="$desc" />
+        <script defer src="min.js"></script>
         <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css"/>
 headerText;
     
@@ -26,9 +27,9 @@ headerText;
     echo $header;
 };
     
-$render_header = function($title, $style)  {
-render_header_top();
-echo "<link defer rel=\"stylesheet\" href=\"styles/$style.css\" />";
+$render_header = function($title, $style, $desc)  {
+render_header_top($desc);
+echo "<link rel=\"stylesheet\" href=\"styles/$style.css\" />";
 render_header_bottom($title);
 };
 

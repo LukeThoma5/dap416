@@ -1,0 +1,22 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .sizable-card {    
+        .img-card {
+            h5 {
+                background-color: black;
+            }
+    
+            // Treat mouse over and tab focus the same
+            &:hover,
+            &:focus {    
+                h5 {
+                    background-color: red !important;
+                }
+            }    
+        }
+    }
+
+    footer {
+        display: none;
+    }
+}

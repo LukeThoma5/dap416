@@ -3,7 +3,7 @@
 
 body {
     background-color: #FFDBAA;
-    font-family: Arial, Helvetica;
+    font-family: 'Bitter', serif;
 
     margin: 0;
 
@@ -102,3 +102,5 @@ nav {
         height: 2.5em;
     }
 }
+
+@import 'ie.scss';

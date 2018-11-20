@@ -4,9 +4,10 @@ function render_nav_item($link, $name) {
 
     $current_indicator = "";
     $class = "nav-item";
-
-    if ($_SERVER['REQUEST_URI'] == $link) {
-        $current_indicator = '<span class="sr-only">(current)</span>';
+    
+    if (strpos($_SERVER['REQUEST_URI'], $link) !== false) {
+        // $current_indicator = '<span class="sr-only">(current)</span>';
+        $current_indicator = '';
         $class = "nav-item active";
     }
 

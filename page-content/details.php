@@ -49,8 +49,8 @@ card;
 <div class="page-content">
 
   <section class="responsive-table">
+    <h2>Race Participants</h2>
     <table class="table table-bordered table-hover">
-      <caption>List of Participants</caption>
       <thead>
         <tr>
           <th scope="col">Position</th>
@@ -107,5 +107,3 @@ card;
   </div>
 </div>
 </div>
-
-<?php require_once("footer.php") ?>
