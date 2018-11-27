@@ -79,6 +79,6 @@ $days = array(
     (new Day(1))->invalid(),
     (new Day(2))->invalid(),
 );
-$days_of_week = array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+$days_of_week = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
 
 ?>
