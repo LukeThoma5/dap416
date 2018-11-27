@@ -27,8 +27,38 @@
   AddOutputFilterByType DEFLATE text/xml
 
   # Remove browser bugs (only needed for really old browsers)
-  BrowserMatch ^Mozilla/4 gzip-only-text/html
-  BrowserMatch ^Mozilla/4\.0[678] no-gzip
-  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-  Header append Vary User-Agent
+  #BrowserMatch ^Mozilla/4 gzip-only-text/html
+  #BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  #BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  #Header append Vary User-Agent
+</IfModule>
+
+#<FilesMatch "\.(?i:gif|jpe?g|png|ico|css|js|swf)$">
+#
+ # <IfModule mod_headers.c>
+ #   Header set Cache-Control "max-age=172800, public, must-revalidate"
+ # </IfModule>
+#
+#</FilesMatch>
+
+# Leverage Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access 1 year"
+  ExpiresByType image/jpeg "access 1 year"
+  ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/html "access 1 month"
+  ExpiresByType application/pdf "access 1 month"
+  ExpiresByType text/x-javascript "access 1 month"
+  ExpiresByType application/x-shockwave-flash "access 1 month"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresDefault "access 1 month"
+</IfModule>
+<IfModule mod_headers.c>
+  <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf|woff2|svg|php|js|html|htm)$">
+  Header set Cache-Control "max-age=2678400, public"
+  </filesmatch>
+  
 </IfModule>

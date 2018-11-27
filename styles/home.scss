@@ -53,6 +53,30 @@
     }
 }
 
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+
+    .img-container {
+        width: 100%;
+        background-image: url(../images/header-img.jpg);
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: #ffff;
+        }
+    }
+}
+
 
 @media (min-width: 1400px) {
     .sizable-card {
