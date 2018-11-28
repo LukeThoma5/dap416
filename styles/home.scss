@@ -60,8 +60,7 @@
     margin-top: 1em;
 
     .img-container {
-        width: 100%;
-        background-image: url(../images/header-img.jpg);
+        // background-image: url(../images/header-img.jpg);
         background-repeat-x: no-repeat;
         background-repeat-y: no-repeat;
         background-position: center;
@@ -72,7 +71,22 @@
         justify-content: center;
 
         h1 {
-            color: #ffff;
+            font-weight: bolder;
+
+             /* WebKit (Safari/Chrome) Only */
+            -webkit-text-stroke: 1px black;
+            
+            // color: #ffab38;
+            color: #ffab38;
+
+            text-shadow:
+            3px 3px 0 #000,
+            /* Simulated effect for Firefox and Opera
+               and nice enhancement for WebKit */
+           -1px -1px 0 #000,  
+            1px -1px 0 #000,
+           -1px  1px 0 #000,
+            1px  1px 0 #000;
         }
     }
 }
@@ -82,11 +96,20 @@
     .sizable-card {
         width: 16.66%;
     }
+
+    .img-container {
+        width: 60%;
+        
+    }
 }
 
 @media (max-width: 1400px) {
     .sizable-card {
         width: 25%;
+    }
+
+    .img-container {
+        width: 60%;
     }
 }
 
@@ -94,11 +117,30 @@
     .sizable-card {
         width: 33.33%;
     }
+
+    .img-container {
+        width: 80%;
+        // background-image: url(../images/header-img-large.jpg);
+    }
+}
+
+@media (min-width: 781px) {
+    .img-container {
+        background-image: url(../images/header-img-large.jpg);
+    }
 }
 
 @media (max-width: 780px) {
     .sizable-card {
        width: 50%;
+    }
+
+    .img-container {
+        width: 100%;
+        background-image: url(../images/header-img-780.jpg);
+        h1 {
+            font-size: 2em;
+        }
     }
 }
 
