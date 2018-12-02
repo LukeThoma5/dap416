@@ -29,7 +29,7 @@ headerText;
     
 $render_header = function($title, $style, $desc)  {
 render_header_top($desc);
-echo "<link rel=\"stylesheet\" href=\"styles/$style.css\" />";
+echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/$style.css\" />";
 render_header_bottom($title);
 };
 

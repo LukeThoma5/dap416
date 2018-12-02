@@ -2,6 +2,10 @@
 #AuthName "DAP416"
 #AuthUserFile /home/l/Documents/prog/dap416/.htpasswd
 #Require valid-user
+Redirect /dap416/assignment/index.html /dap416/assignment/home.php
+Redirect /dap416/assignment/index.htm /dap416/assignment/home.php
+Redirect /dap416/assignment/index.php /dap416/assignment/home.php
+Redirect /dap416/assignment/$ /dap416/assignment/home.php
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
   AddOutputFilterByType DEFLATE application/javascript

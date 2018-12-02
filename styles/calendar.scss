@@ -7,7 +7,10 @@ $light: #f8f9fa;
     border: 1px solid $border-color;
 
     header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+
         h5 {
             width: calc(100%/7);
             text-align: center;
@@ -59,7 +62,10 @@ $light: #f8f9fa;
     }
 
     .day-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
     }
@@ -73,11 +79,11 @@ $light: #f8f9fa;
         padding: 1em;
 
         border: none;
-    
+
         header {
-           display: none;
+            display: none;
         }
-    
+
         .day {
             width: 100%;
             min-height: 5em;
@@ -91,13 +97,13 @@ $light: #f8f9fa;
             small {
                 display: initial;
             }
-           
+
             &.invalid {
                 display: none;
             }
-    
-        }    
-        
-    }  
-    
+
+        }
+
+    }
+
 }

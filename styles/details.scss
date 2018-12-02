@@ -2,7 +2,9 @@ caption {
     display: none;
 }
 
-h2 { margin: .5em 0em 0.5em 1em; }
+h2 {
+    margin: .5em 0em 0.5em 1em;
+}
 
 dl {
 
@@ -32,12 +34,12 @@ dl {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: wrap;
-        flex-flow: wrap;
+    flex-flow: wrap;
 
     .table-card {
         width: 100%;
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         padding: 1em;
     }
 }
@@ -53,7 +55,9 @@ dl {
     }
 
     button {
-        span, i {
+
+        span,
+        i {
             vertical-align: middle;
         }
 
